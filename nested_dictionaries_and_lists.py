@@ -1,10 +1,10 @@
 # ---1---
 
 # x = [ [5,2,3], [10,8,9] ] 
-students = [
-     {'first_name':  'Michael', 'last_name' : 'Jordan'},
-     {'first_name' : 'John', 'last_name' : 'Rosales'}
-]
+# students = [
+#      {'first_name':  'Michael', 'last_name' : 'Jordan'},
+#      {'first_name' : 'John', 'last_name' : 'Rosales'}
+# ]
 # sports_directory = {
 #     'basketball' : ['Kobe', 'Jordan', 'James', 'Curry'],
 #     'soccer' : ['Messi', 'Ronaldo', 'Rooney']
@@ -40,9 +40,13 @@ students = [
 # ---3---
 
 
-#     def iterateDictionary2(key_name, some_list):
-#         for i in range(len(some_list)):
-#         print(some_list[i][key_name])
+# def iterateDictionary2(key_name, some_list):
+#      for i in range(len(some_list)):
+#           names = some_list[i][key_name]
+#           if i == len(some_list):
+#                return
+#           print(names)
+          
 
 
 
@@ -53,15 +57,19 @@ students = [
 
 #---4---
 
-# dojo = {
-#    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
-#    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
-# }
+dojo = {
+   'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+   'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
 
-# def printInfo(element):
-#    for key in element:
-#        print(f"{len(element[key])} {key}")
-#        for i in range(len(element[key])):
-#            print(element[key][i])
+def printInfo(element):
+    for key in element:
+        print(f"{len(element[key])} {key}")
+        for i in range(len(element[key])):
+            if i == (len(element[key])-1):
+                print(element[key][i])
+                print(" ")
+            else:
+                print(element[key][i])
 
-# printInfo(dojo)
+printInfo(dojo)
